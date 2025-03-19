@@ -1,0 +1,42 @@
+/* LandingPage CSS */
+.terminal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the pressing effect */
+}
+
+.terminal-container.pressed {
+  transform: scale(0.95); /* Apply scale effect to simulate pressing */
+}
+
+.terminal-window {
+  width: 100%;
+  max-width: 750px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  overflow: hidden;
+}
+
+.terminal-text {
+  margin: 0;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.terminal-text::after {
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

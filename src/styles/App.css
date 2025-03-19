@@ -1,0 +1,24 @@
+/* Global styles */
+body {
+  background-color:  #0a192f;
+  color: #ccd6f6;
+  font-family: 'IBM Plex Mono', monospace; 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ccd6f6;
+  font-weight: bold; 
+  margin: 20px 0; /* Add spacing around headers */
+  padding-top: 80px; 
+}
+
+a {
+  color: #ccd6f6; 
+  text-decoration: none;
+}
+
+p,span, div {
+  color: #ccd6f6;
+}
