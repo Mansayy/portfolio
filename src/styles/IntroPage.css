@@ -1,0 +1,40 @@
+.hi{
+    color:#ccd6f6;
+    font-weight: 200;
+  font-size: 48px;
+  font-family: fantasy;
+}
+.name{
+    color:#64ffda;
+    font-weight: 500;
+  font-size: 48px;
+  font-family: fantasy;
+}
+.intro-one{
+  color:#ccd6f6;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: fantasy;
+  display: block; 
+  text-align: center;  
+  margin: 0 auto;  
+  max-width: 60%; 
+  line-height: 1.5; 
+}
+.p{
+
+    color:#ccd6f6;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex; 
+    text-align: center;  
+    margin: 0 auto;  
+    max-width: 45%; 
+    line-height: 1.5; 
+
+}
+.Intro{
+  text-align: center;
+}
+
