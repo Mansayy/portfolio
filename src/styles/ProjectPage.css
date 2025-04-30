@@ -1,0 +1,30 @@
+.project-card-img-wrapper {
+    height: 250px;                   
+    background-color: #0a192f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;               
+  }
+  
+  .project-card-img {
+    height: 100%;                  
+    width: auto;                     
+    object-fit: contain;            
+  }
+  
+  .card {
+    height: 450px;                   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-body {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

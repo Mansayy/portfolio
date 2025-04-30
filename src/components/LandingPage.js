@@ -10,7 +10,6 @@ const LandingPage = () => {
   const navigate = useNavigate();
   const [pressed, setPressed] = useState(false);
 
-  // Simulate the typing effect
   useEffect(() => {
     const interval = setInterval(() => {
       if (indexRef.current < fullText.length) {
@@ -39,6 +38,26 @@ const LandingPage = () => {
 
     return () => clearInterval(cursorInterval); 
   }, [text]); 
+
+  useEffect(() => {
+    const handleKeyDown = () => {
+      if (!pressed) {
+        setPressed(true); 
+      }
+    };
+    const handleClick = () => {
+      if (!pressed) {
+        setPressed(true); 
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('click', handleClick);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('click', handleClick);
+    };
+  }, [pressed]);
 
   useEffect(()=>{
     if (pressed) {

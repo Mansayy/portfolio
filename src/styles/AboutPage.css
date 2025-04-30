@@ -1,27 +1,127 @@
-.about-container {
-    display: flex;
-    margin-bottom: 20px;
-    font-family: monospace;
-  
-  }
-  
-  .about-text {
-    font-family: monospace;
-    font-size: 30px;
-    margin: 0;
-    white-space: nowrap;
-  }
-  
-  
-  .about-window {
-    width: 100%;
+#about {
+  min-height: 50vh;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 200px;
+
+}
+
+.about-description ul {
+  padding-top: 20px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+.about-description li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #ccd6f6;
+  font-family: monospace;
+}
+
+.about-description li::before {
+  content: "\00BB    ";
+  color: #45CFCD;;
+  position: absolute;
+  left: 0;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-description {
+  font-family: monospace;
+  color:  #ccd6f6;
+  max-width: 600px;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0;
+}
+.about-heading {
+  color: #ccd6f6;
+  font-weight: bold;
+  font-family: fantasy,cursive;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 3px;
+  background-color: #45CFCD;
+}
+
+.about-description a,
+.about-description b {
+  font-size: 20px;
+  font-weight: bold;
+  color: #45CFCD;
+  font-family: monospace;
+}
+
+.about-image {
+  padding-left: 40px;
+}
+
+.about-image img {
+  max-width: 350px;
+  height: 350px; 
+  border-radius: 50%; 
+  margin-left: 30px;
+  box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+  border: none;
+  object-fit: cover; 
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.about-image img:hover {
+  transform: scale(1.15); 
+}
+
+@media only screen and (max-width: 788px) {
+  .about-image img {
     max-width: 200px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    padding: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #00ff00;
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
-    overflow: hidden;
   }
-  
+}
+
+.about-image:hover {
+  transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+  #about {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
+  }
+
+  .about-description {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .about-description a,
+  .about-description b {
+    font-size: 17px;
+  }
+
+  .about-image img {
+    display: none;
+  }
+
+  .about-content {
+    display: unset;
+  }
+}

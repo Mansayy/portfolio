@@ -1,27 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/AboutPage.css';
-const AboutPage = () => {
-    const fullText = 'About Me';
+
+import React, { Component } from "react";
+import "../styles/AboutPage.css";
+
+class AboutPage extends Component {
+
+  render() {
+    const one = (
+      <p>
+         Looking for a Software Engineer who can transform your tech vision into 
+         reality? With a dynamic blend of advanced frontend and backend skills, 
+         I specialize in building high-performance,large-scale distributed systems 
+         and seamless user experiences. I'm passionate about using technology to 
+         drive innovation.
+         I am currently a <b>Software Development Engineer</b> at <b>Coforge</b>, working
+         for the <b>New Hampshire Department of Safety</b>. I graduated from 
+        <b> New York University</b> in 2024 with Masters in Computer Engineering.
+      </p>
+    );
+
+    const two = (
+      <p>
+        Outside of work, you'll find me reading, volunteering, or exploring the
+        outdoors.
+      </p>
+    );
+
+    const tech_stack = [
+      "Java",
+      "Angular",
+      "Database",
+      "Python",
+      "React"
+    ];
 
     return (
-        <div>
-            <div className="about">
-                    <pre className="about-text">{fullText}</pre>
-            </div>
-            <div className="content">
-                <div className="text">
-                <center><div className="image">
-                    <img src={"./public/logo.jpg"} alt="Mansi Joshi" />
-                </div>
-                </center>
-                    <p>
-
-                     </p>
-                </div>
-              
-            </div>
+      <div id="about">
+        <div className="about-heading">
+          <span className="section-title">About me</span>
         </div>
+        <div className="about-content">
+          <div className="about-description">
+            {one}
+            <p>Here are some technologies I work with:</p>
+            <ul className="tech-stack">
+              {tech_stack.map((tech_item, i) => (
+                <li key={i}>{tech_item}</li>
+              ))}
+            </ul>
+            {two}
+          </div>
+          <div className="about-image">
+            <img alt="Mansi Joshi" src={"/mansi.jpg"} />
+          </div>
+        </div>
+      </div>
     );
-};
+  }
+}
 
 export default AboutPage;
+
+
