@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import projImg1 from "../assets/img/autocat.jpg";
@@ -8,7 +9,7 @@ const Projects = () => {
   const projectList = [
     {
       title: "AutoCat",
-      description: "AutoCat, a framework that uses pre-trained LLMs for retail recommender systems, focusing specifically on product categorization and complement identification tasks.",
+      description: "AutoCat, a framework that uses pre-trained LLMs for retail recommender systems, focusing specifically on product categorization and complement identification tasks.(Submitted to SIGIR 2025)",
       imgUrl: projImg1,
       link: "https://drive.google.com/file/d/13MnCh4yAlHzHNgDlvf28xjjAR29pi1Mm/view?usp=sharing",
     },
@@ -27,7 +28,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-5">
+    <section id="projects" className="section">
       <Container>
         <h2 className="text-center mb-4">My Projects</h2>
         <Row>

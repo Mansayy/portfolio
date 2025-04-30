@@ -11,6 +11,7 @@ import ScrollToTop from './ScrollBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
+
 function App() {
   const location = useLocation();
   const shouldRenderNavbar = location.pathname !== '/'; 
@@ -26,6 +27,14 @@ function App() {
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/timeline" element={<Timeline />} /> 
       </Routes>
+     
+
+      <AboutPage/>
+      <ProjectPage/>
+      <Timeline/>
+      
+      
+      
     </div>
   );
 }
