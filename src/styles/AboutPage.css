@@ -1,4 +1,4 @@
-/* General Styles for the About Section */
+
 #about {
   min-height: 50vh;
   margin: auto;
@@ -27,8 +27,7 @@
 
 .about-content {
   display: flex;
-  flex-wrap: wrap; /* Ensure that items wrap properly on smaller screens */
-  justify-content: space-between;
+  flex-wrap: wrap;    justify-content: space-between;
   flex-direction: row;
 }
 
@@ -39,13 +38,11 @@
   font-size: 20px;
   text-align: justify;
   margin: 0;
-  flex: 1; /* Allow the description to take up remaining space */
-}
+  flex: 1;  }
 
 .about-image {
   padding-left: 40px;
-  flex-shrink: 0; /* Prevent image from shrinking */
-}
+  flex-shrink: 0;  }
 
 .about-image img {
   max-width: 350px;
@@ -116,16 +113,13 @@
   }
 
   .about-image img {
-    display: none; /* Hide the image on small screens */
-  }
+    display: none;    }
 
   .about-content {
-    display: block; /* Stack the content vertically */
-  }
+    display: block;    }
 }
 
-/* Add Smooth Scrolling Behavior Globally */
-html {
+ html {
   scroll-behavior: smooth;
 }
 

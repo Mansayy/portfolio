@@ -1,5 +1,4 @@
-/* Navbar styling */
-.navbar {
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,11 +7,11 @@
   color: #ccd6f6;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
-  position: fixed;  /* Keep Navbar fixed at the top */
-  top: 0;  /* Stay at the top */
-  left: 0;  /* Full width */
-  width: 100%;  /* Ensure it spans the whole width */
-  z-index: 1000;  /* Ensure it stays above other content */
+  position: fixed;   
+  top: 0;     
+  left: 0;     
+  width: 100%;     
+  z-index: 1000;     
   box-sizing: border-box;
 }
 

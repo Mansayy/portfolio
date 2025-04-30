@@ -1,7 +1,6 @@
-/* General Styles for the Intro Section */
-#Intro {
+ #Intro {
   position: relative;
-  min-height: 100vh; /* Ensure the section covers the full viewport */
+  min-height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,7 @@
 
 .intro-container {
   text-align: center;
-  max-width: 90%; /* Allow some padding on smaller screens */
+  max-width: 90%; 
   margin: 0 auto;
 }
 
@@ -56,8 +55,7 @@
   line-height: 1.5;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
   .hi,
   .name {
     font-size: 36px;
@@ -91,8 +89,7 @@
   }
 }
 
-/* Styling for FractalTree to fit well in mobile */
-.FractalTree {
+ .FractalTree {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
