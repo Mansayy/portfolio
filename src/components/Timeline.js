@@ -7,12 +7,11 @@ import Footer from "./Footer"
 const Timeline = () => {
   return (
     <section id="timeline" className="section">
-      <h2 className="text-center mb-4">My Journey!</h2>
+      <h2 className="text-center mb-4 timeline-heading">My Timeline</h2>
       <div className="timeline-container">
         <div className="timeline">
           {timelineData.map((item) => (
             <div key={item.id} className="timeline-item">
-              {/* Optionally include an icon */}
               {/* <div className="timeline-icon" style={{ backgroundColor: item.color }}>
                 <item.icon size={30} color="white" />
               </div> */}

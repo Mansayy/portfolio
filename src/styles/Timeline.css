@@ -8,6 +8,25 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+
+.timeline-heading {
+    font-weight: bold;
+    font-family: fantasy, cursive;
+    position: relative;
+    margin-bottom: 20px; /* Space between heading and the line */
+  }
+  
+  .timeline-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -40px; /* Adjusted to position the line further from the heading */
+    left: 50%; /* Position the line in the center */
+    width: 50%; /* The width of the line (can adjust as needed) */
+    height: 3px;
+    background-color: #45cfcd;
+    transform: translateX(-50%); /* This shifts the line left by 50% of its width to center it */
+    margin-bottom: 30px; /* Space between line and content below */
+  }
 /* Container for entire timeline section */
 .timeline-container {
     display: flex;

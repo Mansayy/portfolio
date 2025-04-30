@@ -3,13 +3,14 @@ import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import projImg1 from "../assets/img/autocat.jpg";
 import projImg2 from "../assets/img/book.png";
-import projImg3 from "../assets/img/git.jpg";
+import projImg3 from "../assets/img/git.png";
+import '../styles/ProjectPage.css'; 
 
 const Projects = () => {
   const projectList = [
     {
       title: "AutoCat",
-      description: "AutoCat, a framework that uses pre-trained LLMs for retail recommender systems, focusing specifically on product categorization and complement identification tasks.(Submitted to SIGIR 2025)",
+      description: "AutoCat is a framework using LLMs for retail product categorization and recommendation." ,
       imgUrl: projImg1,
       link: "https://drive.google.com/file/d/13MnCh4yAlHzHNgDlvf28xjjAR29pi1Mm/view?usp=sharing",
     },
@@ -30,9 +31,11 @@ const Projects = () => {
   return (
     <section id="projects" className="section">
       <Container>
-        <h2 className="text-center mb-4">My Projects</h2>
+      <h2 className="text-center mb-4 project-heading" >
+         My Projects
+      </h2>
         <Row>
-          {projectList.map((project, index) => (
+          {projectList.map((project, index)  => (
             <ProjectCard key={index} {...project} />
           ))}
         </Row>
