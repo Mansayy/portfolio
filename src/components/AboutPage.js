@@ -50,7 +50,9 @@ class AboutPage extends Component {
               {two}
             </div>
             <div className="about-image">
-              <img alt="Mansi Joshi" src={"/mansi.jpg"} />
+              <div className="about-image-frame">
+                <img alt="Mansi Joshi" src={"/mansi.jpg"} />
+              </div>
             </div>
           </div>
         </div>
