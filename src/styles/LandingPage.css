@@ -4,29 +4,30 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:  #0a192f;
-  transition: transform 0.3s ease-in-out; 
+  background-color: #0a192f;
+  transition: transform 0.3s ease-in-out;
 }
 
 .terminal-container.pressed {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 .terminal-window {
   width: 100%;
   max-width: 750px;
-  background-color: #1e1e1e;
+  background-color: #112240;
   border-radius: 10px;
-  padding: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  color: #00ff00;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  padding: 20px 24px;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  color: #64ffda;
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.15), 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   overflow: hidden;
 }
 
 .terminal-text {
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
   white-space: nowrap;
   overflow: hidden;
 }

@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="site-navbar">
       <div className="navbar-left">
         <ul>
           <li><a href="#home" onClick={(e) => handleScroll(e, 'Intro')}>Home</a></li>

@@ -17,7 +17,7 @@ function App() {
   const shouldRenderNavbar = location.pathname !== '/'; 
 
   return (
-    <div className="App">
+    <div className={`App${shouldRenderNavbar ? ' App--with-nav' : ''}`}>
       {shouldRenderNavbar && <Navbar />}
       <ScrollToTop/>
       <Routes>
@@ -27,14 +27,15 @@ function App() {
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/timeline" element={<Timeline />} /> 
       </Routes>
-     
 
-      <AboutPage/>
-      <ProjectPage/>
-      <Timeline/>
-      
-      
-      
+      {shouldRenderNavbar && (
+        <>
+          <AboutPage/>
+          <ProjectPage/>
+          <Timeline/>
+        </>
+      )}
+
     </div>
   );
 }

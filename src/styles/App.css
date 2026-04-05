@@ -1,90 +1,66 @@
 
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+  --color-bg:         #0a192f;
+  --color-text:       #ccd6f6;
+  --color-accent:     #64ffda;
+  --color-accent-alt: #45cfcd;
+  --color-surface:    #1a2431;
+  --font-mono:        'IBM Plex Mono', 'Courier New', Courier, monospace;
+  --font-heading:     'Raleway', sans-serif;
+  --navbar-height:    70px;
+  --transition:       0.3s ease;
+}
+
+/* ── Base Reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0a192f  !important;
-  color: #ccd6f6;
-  font-family: 'IBM Plex Mono', monospace; 
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
   margin: 0;
   padding: 0;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  color: #ccd6f6;
-  font-weight: bold; 
-  margin: 20px 0; 
-  padding-top: 80px; 
-} */
-
 a {
-  color: #ccd6f6; 
+  color: var(--color-text);
   text-decoration: none;
 }
 
 span, div {
-  color: #ccd6f6;
+  color: var(--color-text);
 }
-html {
-  scroll-behavior: smooth;
 
-}
 section {
-  height: 100vh;     scroll-snap-align: start;
+  min-height: 100vh;
+  scroll-snap-align: start;
   padding: 50px;
-}
- body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .App {
-  padding-top: 70px;  }
+  padding-top: 0;
+}
 
- .section {
+.App--with-nav {
+  padding-top: var(--navbar-height);
+}
+
+.section {
   margin-top: 20px;
 }
 
- .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1rem;
-  background-color: #0a192f;
-  color: #ccd6f6;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  position: fixed;     top: 0;     left: 0;     width: 100%;     z-index: 1000;     box-sizing: border-box;
+/* ── Accessibility: Focus ring matching dark theme ───────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
-
-.navbar-left ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-left li a {
-  text-decoration: none;
-  color: #ccd6f6;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.navbar-left li a:hover {
-  color: #64ffda;
-}
-
-.navbar-right {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-right .icon {
-  color: #ccd6f6;
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-
-.navbar-right .icon:hover {
-  color: #64ffda;
-}
-
- 

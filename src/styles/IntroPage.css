@@ -1,95 +1,109 @@
  #Intro {
   position: relative;
-  min-height: 100vh;  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#0a192f ;
+  background-color: #0a192f;
   color: #ccd6f6;
 }
 
 .intro-container {
   text-align: center;
-  max-width: 90%; 
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .hi {
+  display: block;
   color: #ccd6f6;
-  font-weight: 200;
-  font-size: 48px;
-  font-family: fantasy;
+  font-weight: 300;
+  font-size: 44px;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .name {
+  display: block;
   color: #64ffda;
-  font-weight: 500;
-  font-size: 48px;
-  font-family: fantasy;
+  font-weight: 700;
+  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+  margin-bottom: 16px;
 }
 
 .intro-one {
   color: #ccd6f6;
-  font-weight: 100;
-  font-size: 30px;
-  font-family: fantasy;
+  font-weight: 300;
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
   display: block;
   text-align: center;
-  margin: 10px auto;
+  margin: 8px auto 16px;
   max-width: 70%;
   line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 .p {
-  color: #ccd6f6;
-  font-weight: 100;
-  font-size: 20px;
-  font-family: monospace;
+  color: #a8b2d8;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto 24px;
   max-width: 60%;
-  line-height: 1.5;
+  line-height: 1.7;
+  text-align: center;
 }
 
- @media only screen and (max-width: 768px) {
-  .hi,
+@media only screen and (max-width: 768px) {
+  .hi {
+    font-size: 34px;
+  }
+
   .name {
-    font-size: 36px;
+    font-size: 42px;
   }
 
   .intro-one {
-    font-size: 24px;
+    font-size: 22px;
     max-width: 80%;
   }
 
   .p {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 80%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .hi,
+  .hi {
+    font-size: 26px;
+  }
+
   .name {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .intro-one {
-    font-size: 22px;
+    font-size: 18px;
     max-width: 90%;
   }
 
   .p {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 90%;
   }
 }
 
- .FractalTree {
+.FractalTree {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
