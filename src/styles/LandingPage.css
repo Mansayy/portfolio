@@ -13,7 +13,7 @@
 }
 
 .terminal-window {
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 750px;
   background-color: #112240;
   border-radius: 10px;
@@ -28,8 +28,15 @@
 .terminal-text {
   margin: 0;
   font-size: 22px;
-  white-space: nowrap;
+  white-space: pre-wrap;
+  word-break: break-word;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .terminal-text {
+    font-size: 15px;
+  }
 }
 
 .terminal-text::after {
