@@ -29,6 +29,7 @@ class AboutPage extends Component {
       "Database",
       "Python",
       "React",
+      "TypeScript"
     ];
 
     return (
