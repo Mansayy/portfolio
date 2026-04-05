@@ -24,7 +24,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        <a href="mailto:mj2966@nyu.edu" target="_blank" className="icon"><FaEnvelope /></a>
+        <a href="mailto:mj2966@nyu.edu" target="_blank" rel="noreferrer" className="icon"><FaEnvelope /></a>
         <a href="https://github.com/mansayy" target="_blank" rel="noopener noreferrer" className="icon"><FaGithub /></a>
         <a href="https://www.linkedin.com/in/joshi--mansi/" target="_blank" rel="noopener noreferrer" className="icon"><FaLinkedin /></a>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import timelineData from "../assets/timelineData.js"; 
-import { FaSchool, FaBriefcase } from "react-icons/fa";
 import "../styles/Timeline.css"; 
 import Footer from "./Footer"
 

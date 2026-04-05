@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import AboutPage from './AboutPage';
 import Navbar from './NavBar';  
 import IntroPage from "./IntroPage"; 
 import ProjectPage from './ProjectPage';
 import Timeline from './Timeline'; 
-import InfiniteScroll from "react-infinite-scroll-component";
 import ScrollToTop from './ScrollBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
